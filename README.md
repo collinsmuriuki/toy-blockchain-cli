@@ -1,6 +1,6 @@
 ## toy-blockchain-cli
 
-Understanding how block-chain works
+Grokking crypto
 
 ## Usage
 
