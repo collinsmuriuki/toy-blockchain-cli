@@ -110,6 +110,7 @@ impl Chain {
         true
     }
 
+    // gen merkle root
     fn get_merkle(current_transaction: Vec<Transaction>) -> String {
         let mut merkle = Vec::new();
 
@@ -126,8 +127,8 @@ impl Chain {
         while merkle.len() > 1 {
             let mut h1 = merkle.remove(0);
             let mut h2 = merkle.remove(0);
-            h1.push_str(&mut h2);
-            let nh = Chain::hash(&h1);
+            let concat = format!("{}{}", h1, h2);
+            let nh = Chain::hash(&concat);
             merkle.push(nh);
         }
 
@@ -155,6 +156,7 @@ impl Chain {
         }
     }
 
+    // hash Serializable objects
     fn hash<T: serde::Serialize>(item: &T) -> String {
         let input = serde_json::to_string(&item).unwrap();
         let mut hasher = Sha256::default();
