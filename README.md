@@ -1,6 +1,8 @@
-# toy-blockchain-cli
+# cheza_coin
 
-Miniscule implementation of a blockchain with an unnamed currency, transactions, proof of work and a merkle root implementation
+Miniscule implementation of a blockchain and a currency known as cheza_coin, transactions, proof of work and a merkle root implementation. Mining rewards and difficulty can be updated on the fly.
+
+This is built for educational purposes, so do not take it too seriously.
 
 ## Usage
 

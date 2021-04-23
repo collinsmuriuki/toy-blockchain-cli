@@ -1,15 +1,15 @@
 [package]
-name = "toy-blockchain-cli"
+name = "cheza"
 version = "0.1.0"
-authors = ["Collins Muriuki <murerwacollins@gmail.com>"]
+authors = ["Collins Muriuki <hello@collinsmuriuki.xyz>"]
 edition = "2018"
 
 [lib]
-name = "blockchain"
+name = "cheza_blockchain"
 path = "src/lib.rs"
 
 [[bin]]
-name = "toy_bc"
+name = "cheza_cli"
 path = "src/main.rs"
 
 

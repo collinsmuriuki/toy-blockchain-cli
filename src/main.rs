@@ -1,10 +1,10 @@
-extern crate blockchain;
+extern crate cheza_blockchain;
 
 use std::io;
 use std::io::Write;
 use std::process;
 
-use blockchain::Chain;
+use cheza_blockchain::Chain;
 
 fn main() {
     let mut miner_address = String::new();
